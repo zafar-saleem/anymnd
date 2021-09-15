@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Hamburger from 'pages/chat/components/hamburger/';
 import Users from 'pages/chat/components/users/';
+import Channels from 'pages/chat/components/channels/';
 
 const Container = styled.section`
 	@media (max-width: 450px) {
@@ -15,7 +16,7 @@ const Container = styled.section`
 const List = styled.div`
 	@media (max-width: 450px) {
 		position: absolute;
-		width: 200px;
+		width: 230px;
 		height: 100vh;
 		padding: 80px 20px 20px;
 		transition: 180ms all ease-in-out;
@@ -44,14 +45,7 @@ const Sidebar = () => {
 		<Container>
 			<List className={openMenu ? 'open' : 'close'}>
 				<Users />
-				<div>
-					<span>Choose your channel</span>
-					<ul>
-						<li><Link to=''>General Channel</Link></li>
-						<li><Link to=''>Technology Channel</Link></li>
-						<li><Link to=''>LGTM Channel</Link></li>
-					</ul>
-				</div>
+				<Channels />
 			</List>
 			<Hamburger open={openMenu} toggleOpen={toggleOpen} />
 		</Container>
