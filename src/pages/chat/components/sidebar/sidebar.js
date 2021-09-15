@@ -6,14 +6,18 @@ import Users from 'pages/chat/components/users/';
 import Channels from 'pages/chat/components/channels/';
 
 const Container = styled.section`
+	// padding: 20px;
+	border-right: 1px solid #e6ecf3;
 	@media (max-width: 450px) {
 		position: absolute;
 		top: 0;
 		left: 0;
+		padding: 0;
 	}
 `;
 
 const List = styled.div`
+	// min-height: 100vh;
 	@media (max-width: 450px) {
 		position: absolute;
 		width: 230px;
