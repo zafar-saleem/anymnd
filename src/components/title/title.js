@@ -8,7 +8,8 @@ const TitleText = styled.h1`
 
 const Notice = styled.p``;
 
-export default function Title({ title, notice }) {
+const Title = ({ title, notice }) => {
+	console.log('alskjdlashdasjdh')
 	return (
 		<TitleContainer>
 			<TitleText>{title}</TitleText>
@@ -16,3 +17,5 @@ export default function Title({ title, notice }) {
 		</TitleContainer>
 	);
 }
+
+export default Title;
