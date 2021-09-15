@@ -3,7 +3,9 @@ import styled from 'styled-components';
 import Title from 'components/title/';
 
 const Container = styled.div`
+	// min-height: 50vh;
 	h1 {
+		padding: 15px 15px 0 15px;
 		text-align: left;
 	}
 `;
@@ -20,7 +22,7 @@ const UserListItemText = styled(Link)`
 	color: #333333;
 	transition: 180ms all ease-in-out;
 	&:hover {
-		background-color: #cccccc;
+		background-image: -webkit-linear-gradient(right, #f7f9fb, #ffffff);
 	}
 `;
 
