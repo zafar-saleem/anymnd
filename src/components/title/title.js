@@ -4,12 +4,18 @@ const TitleContainer = styled.header``;
 
 const TitleText = styled.h1`
 	font-size: 1.25rem;
+	@media (max-width: 450px) {
+		text-align: center;
+	}
 `;
 
-const Notice = styled.p``;
+const Notice = styled.p`
+	@media (max-width: 450px) {
+		text-align: center;
+	}
+`;
 
 const Title = ({ title, notice }) => {
-	console.log('alskjdlashdasjdh')
 	return (
 		<TitleContainer>
 			<TitleText>{title}</TitleText>
