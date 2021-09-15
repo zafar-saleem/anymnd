@@ -5,6 +5,8 @@ import Sidebar from 'pages/chat/components/sidebar/';
 const Wrapper = styled.div`
 	padding: 20px;
 	// background: red;
+	max-width: 1300px;
+	margin: auto;
 	@media (max=max-width: 450px) {
 		overflow: hidden;
 	}

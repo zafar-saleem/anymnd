@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Hamburger from 'pages/chat/components/hamburger/';
+import Users from 'pages/chat/components/users/';
 
 const Container = styled.section`
 	@media (max-width: 450px) {
@@ -42,14 +43,7 @@ const Sidebar = () => {
 	return (
 		<Container>
 			<List className={openMenu ? 'open' : 'close'}>
-				<div>
-					<span>Choose your user</span>
-					<ul>
-						<li><Link to=''>Joyse</Link></li>
-						<li><Link to=''>Sam</Link></li>
-						<li><Link to=''>Russel</Link></li>
-					</ul>
-				</div>
+				<Users />
 				<div>
 					<span>Choose your channel</span>
 					<ul>
