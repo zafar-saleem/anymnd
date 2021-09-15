@@ -2,7 +2,11 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Title from 'components/title/';
 
-const Container = styled.div``;
+const Container = styled.div`
+	h1 {
+		text-align: left;
+	}
+`;
 
 const UserList = styled.ul``;
 
@@ -13,6 +17,7 @@ const UserListItemText = styled(Link)`
 	padding: 15px;
 	text-decoration: none;
 	font-weight: bold;
+	color: #333333;
 	transition: 180ms all ease-in-out;
 	&:hover {
 		background-color: #cccccc;

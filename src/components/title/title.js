@@ -18,7 +18,7 @@ const Notice = styled.p`
 
 const Title = ({ title, notice, size, weight }) => {
 	return (
-		<TitleContainer>
+		<TitleContainer className='title'>
 			<TitleText size={size} weight={weight}>{title}</TitleText>
 			<Notice>{notice}</Notice>
 		</TitleContainer>
