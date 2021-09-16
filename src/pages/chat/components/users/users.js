@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import Title from 'components/title/';
+import Title from '../../../../components/title/';
 
 const Container = styled.div`
 	// min-height: 50vh;

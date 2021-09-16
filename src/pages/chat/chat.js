@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import Title from 'components/title/';
-import Sidebar from 'pages/chat/components/sidebar/';
-import ChatContents from 'pages/chat/components/chatContents/';
+import Title from '../../components/title/';
+import Sidebar from './components/sidebar/';
+import ChatContents from './components/chatContents/';
 
 const Wrapper = styled.div`
 	padding: 20px;

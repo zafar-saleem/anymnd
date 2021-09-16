@@ -5,7 +5,7 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
-import Chat from 'pages/chat/';
+import Chat from './pages/chat/';
 
 function App() {
   return (
