@@ -2,7 +2,6 @@ import {
   createContext,
   useEffect,
   useContext,
-  useState
 } from 'react';
 import {
   useQuery,

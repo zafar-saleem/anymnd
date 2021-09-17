@@ -24,7 +24,7 @@ const ChatBoxText = styled.textarea`
 `;
 
 const ChatBox = () => {
-	const { loading, error, data, postMessageHere } = useMessages();
+	const { error, postMessageHere } = useMessages();
 
 	return (
 		<Container>
