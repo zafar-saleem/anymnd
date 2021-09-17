@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import Hamburger from 'pages/chat/components/hamburger/';
-import Users from 'pages/chat/components/users/';
-import Channels from 'pages/chat/components/channels/';
+import Hamburger from '../hamburger/';
+import Users from '../users/';
+import Channels from '../channels/';
 
 const Container = styled.section`
 	// padding: 20px;

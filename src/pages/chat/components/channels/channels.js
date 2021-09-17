@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
-import Title from 'components/title/';
+import { Link, useParams } from 'react-router-dom';
+import Title from '../../../../components/title/';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -23,21 +23,25 @@ const ChannelListItemText = styled(Link)`
 	&:hover {
 		background-image: -webkit-linear-gradient(right, #f7f9fb, #ffffff);
 	}
+	&.active {
+		background-image: -webkit-linear-gradient(right, #f7f9fb, #ffffff);
+	}
 `;
 
 const Channels = () => {
+	const { channelId } = useParams();
 	return (
 		<Container>
 			<Title title='Choose your channel' size='1rem' weight='normal' />
 			<ChannelList>
 				<ChannelListItem>
-					<ChannelListItemText to=''>General Channel</ChannelListItemText>
+					<ChannelListItemText to='1' className={channelId == 1 ? 'active' : ''}>General Channel</ChannelListItemText>
 				</ChannelListItem>
 				<ChannelListItem>
-					<ChannelListItemText to=''>Technology Channel</ChannelListItemText>
+					<ChannelListItemText to='2' className={channelId == 2 ? 'active' : ''}>Technology Channel</ChannelListItemText>
 				</ChannelListItem>
 				<ChannelListItem>
-					<ChannelListItemText to=''>LGTM Channel</ChannelListItemText>
+					<ChannelListItemText to='3' className={channelId == 3 ? 'active' : ''}>LGTM Channel</ChannelListItemText>
 				</ChannelListItem>
 			</ChannelList>
 		</Container>
