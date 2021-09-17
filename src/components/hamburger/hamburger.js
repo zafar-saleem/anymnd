@@ -6,7 +6,7 @@ const HamburgerMenu = styled(Link)`
 	position: absolute;
 	top: 15px;
   left: 15px;
-  z-index: 1;
+  z-index: 11;
   width: 50px;
   padding: 10px;
   border-radius: 49%;

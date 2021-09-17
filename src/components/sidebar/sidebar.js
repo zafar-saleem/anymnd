@@ -23,8 +23,9 @@ const List = styled.div`
 		height: 100vh;
 		padding: 80px 20px 20px;
 		transition: 180ms all ease-in-out;
-		background: lightblue;
+		background: #ffffff;
 		box-shadow: 0 5px 10px #999999;
+		z-index: 10;
 	}
 	&.open {
 		left: 0;
@@ -39,8 +40,10 @@ const Sidebar = () => {
 	
 	const toggleOpen = () => {
 		if (!openMenu) {
+			document.querySelector('body').style.overflow = 'hidden';
 			return setOpenMenu(true);
 		}
+		document.querySelector('body').style.overflow = 'inherit';
 		return setOpenMenu(false);
 	};
 
