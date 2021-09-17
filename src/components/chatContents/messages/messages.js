@@ -3,7 +3,7 @@ import { useParams, useLocation, useRouteMatch } from 'react-router-dom';
 import styled from 'styled-components';
 import Loader from '../../loader/';
 import Chats from './chats/';
-import { useMessages } from '../context/messages/';
+import { useMessages } from '../../../contexts/messages/';
 
 const Wrapper = styled.div`
 	overflow-y: scroll;
