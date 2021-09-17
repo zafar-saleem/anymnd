@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import { useParams, useLocation, useRouteMatch } from 'react-router-dom';
 import styled from 'styled-components';
 import Loader from '../../loader/';
 import Chats from './chats/';

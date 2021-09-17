@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import {
   BrowserRouter,
@@ -9,7 +8,6 @@ import {
   ApolloClient,
   InMemoryCache,
   ApolloProvider,
-  createHttpLink,
   HttpLink,
 } from '@apollo/client';
 import Chat from './pages/chat/';
