@@ -35,13 +35,13 @@ const Channels = () => {
 			<Title title='Choose your channel' size='1rem' weight='normal' />
 			<ChannelList>
 				<ChannelListItem>
-					<ChannelListItemText to='1' className={channelId == 1 ? 'active' : ''}>General Channel</ChannelListItemText>
+					<ChannelListItemText to='1' className={channelId === '1' ? 'active' : ''}>General Channel</ChannelListItemText>
 				</ChannelListItem>
 				<ChannelListItem>
-					<ChannelListItemText to='2' className={channelId == 2 ? 'active' : ''}>Technology Channel</ChannelListItemText>
+					<ChannelListItemText to='2' className={channelId === '2' ? 'active' : ''}>Technology Channel</ChannelListItemText>
 				</ChannelListItem>
 				<ChannelListItem>
-					<ChannelListItemText to='3' className={channelId == 3 ? 'active' : ''}>LGTM Channel</ChannelListItemText>
+					<ChannelListItemText to='3' className={channelId === '3' ? 'active' : ''}>LGTM Channel</ChannelListItemText>
 				</ChannelListItem>
 			</ChannelList>
 		</Container>
