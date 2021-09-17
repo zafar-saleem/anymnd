@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import styled from 'styled-components';
 import Loader from '../../loader/';
 import Chats from './chats/';
