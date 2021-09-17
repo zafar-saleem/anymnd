@@ -23,6 +23,9 @@ const Grid = styled.div`
 	height: 100%;
 	grid-template-columns: 1fr 2fr;
 	background-color: #f4f5fb;
+	@media (max-width: 450px) {
+		display: block;
+	}
 `;
 
 const Chat = () => {
