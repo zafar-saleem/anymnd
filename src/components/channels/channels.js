@@ -1,5 +1,5 @@
 import { Link, useParams } from 'react-router-dom';
-import Title from '../../../../components/title/';
+import Title from '../title/';
 import styled from 'styled-components';
 
 const Container = styled.div`

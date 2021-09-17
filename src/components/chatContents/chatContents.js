@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 import ChatBox from './chatBox/';
 import Messages from './messages/';
-import Title from '../../../../components/title/';
-import MessagesProvider from './context/messages/';
+import Title from '../title/';
 
 const Container = styled.div`
 	position: relative;
@@ -23,10 +22,8 @@ const ChatContents = () => {
 	return (
 		<Container>
 			<Title title='LGTM Channel' weight='normal' />
-			<MessagesProvider>
-				<Messages />
-				<ChatBox />
-			</MessagesProvider>
+			<Messages />
+			<ChatBox />
 		</Container>
 	);
 }
