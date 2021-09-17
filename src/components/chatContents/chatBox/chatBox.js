@@ -1,6 +1,6 @@
-import Button from '../../../../../components/button/';
+import Button from '../../button/';
 import styled from 'styled-components';
-import { useMessages } from '../context/messages/';
+import { useMessages } from '../../../contexts/messages/';
 
 const Container = styled.div`
 	position: absolute;
@@ -25,11 +25,6 @@ const ChatBoxText = styled.textarea`
 
 const ChatBox = () => {
 	const { loading, error, data, postMessageHere } = useMessages();
-
-	// const postMessage = (event) => {
-	// 	event.preventDefault();
-
-	// };
 
 	return (
 		<Container>

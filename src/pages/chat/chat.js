@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import Title from '../../components/title/';
-import Sidebar from './components/sidebar/';
-import ChatContents from './components/chatContents/';
+import Sidebar from '../../components/sidebar/';
+import ChatContents from '../../components/chatContents/';
+import MessagesProvider from '../..//contexts/messages/';
 
 const Wrapper = styled.div`
 	padding: 20px;
@@ -35,10 +36,12 @@ const Chat = () => {
 				title='1 day chat App'
 				notice='All messages will be deleted at every 00:00 UTC'
 			/>
-			<Grid>
-				<Sidebar />
-				<ChatContents />
-			</Grid>
+			<MessagesProvider>
+				<Grid>
+					<Sidebar />
+					<ChatContents />
+				</Grid>
+			</MessagesProvider>
 		</Wrapper>
 	);
 }
