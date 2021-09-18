@@ -2,14 +2,18 @@ import styled from 'styled-components';
 import Loader from '../../loader/';
 import Chats from './chats/';
 import { useMessages } from '../../../contexts/messages/';
-
+// Main div element with scroll bar and a height.
 const Wrapper = styled.div`
 	overflow-y: scroll;
   height: 69vh;
 `;
-
+// div element that contains list of messages
 const Container = styled.div``;
-
+/**
+* Message component that renders list of messages.
+* 
+* @returns {JSX} Component User Interface.
+*/
 const Messages = () => {
 	const { loading, error, data } = useMessages();
 	return (

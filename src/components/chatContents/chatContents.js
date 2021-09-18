@@ -2,7 +2,9 @@ import styled from 'styled-components';
 import ChatBox from './chatBox/';
 import Messages from './messages/';
 import Title from '../title/';
-
+// Main container which has a relative position
+// with some padding and sets up styles for 
+// smaller screens.
 const Container = styled.div`
 	position: relative;
 	padding: 20px;
@@ -17,7 +19,12 @@ const Container = styled.div`
 		border-bottom: 1px solid #e6ecf3;
 	}
 `;
-
+/**
+* ChatContents component that renders title, Messages list
+* and chatBox.
+* 
+* @returns {JSX} Component User Interface.
+*/
 const ChatContents = () => {
 	return (
 		<Container>

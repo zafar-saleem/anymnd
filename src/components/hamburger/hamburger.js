@@ -6,7 +6,7 @@ const HamburgerMenu = styled(Link)`
 	position: absolute;
 	top: 15px;
   left: 15px;
-  z-index: 1;
+  z-index: 11;
   width: 50px;
   padding: 10px;
   border-radius: 49%;
@@ -47,7 +47,14 @@ const HamburgerMenuItem = styled.span`
 		}
 	}
 `;
-
+/**
+* Hamburger menu component that renders hamburger menu.
+* 
+* @param {boolean} open - It is the state either open or close.
+* @param {function} toggleOpen - It is the function to update state.
+* 
+* @returns {JSX} Component User Interface.
+*/
 const Hamburger = ({ open, toggleOpen }) => {
 	return (
 		<HamburgerMenu to='#' onClick={toggleOpen}>
