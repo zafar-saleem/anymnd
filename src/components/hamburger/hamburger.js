@@ -47,7 +47,14 @@ const HamburgerMenuItem = styled.span`
 		}
 	}
 `;
-
+/**
+* Hamburger menu component that renders hamburger menu.
+* 
+* @param {boolean} open - It is the state either open or close.
+* @param {function} toggleOpen - It is the function to update state.
+* 
+* @returns {JSX} Component User Interface.
+*/
 const Hamburger = ({ open, toggleOpen }) => {
 	return (
 		<HamburgerMenu to='#' onClick={toggleOpen}>

@@ -34,24 +34,43 @@ const List = styled.div`
 		left: -100vw;
 	}
 `;
-
+/**
+* Sidebar component that renders list of users and channels.
+* 
+* @returns {JSX} Component User Interface.
+*/
 const Sidebar = () => {
+	/**
+	 * Declare 'openMenu' state variable. This shows and hides menu.
+	 * 
+	 * @type {boolean, function}
+	 */
 	const [openMenu, setOpenMenu] = useState(false);
-	
+	/**
+  * toggleOpen function updates the state.
+  */
 	const toggleOpen = () => {
+		/**
+	  * Checks if openMenu is false, if it is then...
+	  */
 		if (!openMenu) {
+			// set overflow to hidden on body tag so that user cannot scroll
+			// up and down.
 			document.querySelector('body').style.overflow = 'hidden';
+			// update the local state.
 			return setOpenMenu(true);
 		}
+		// set up overflow to inherit on body tag and users can scroll now.
 		document.querySelector('body').style.overflow = 'inherit';
+		// update local state.
 		return setOpenMenu(false);
 	};
 
 	return (
 		<Container>
 			<List className={openMenu ? 'open' : 'close'}>
-				<Users />
-				<Channels />
+				<Users toggleOpen={toggleOpen} />
+				<Channels toggleOpen={toggleOpen} />
 			</List>
 			<Hamburger open={openMenu} toggleOpen={toggleOpen} />
 		</Container>

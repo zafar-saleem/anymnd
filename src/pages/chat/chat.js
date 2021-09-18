@@ -29,6 +29,11 @@ const Grid = styled.div`
 	}
 `;
 
+/**
+* Chat component that renders Title, SideBar and ChatContents components.
+* 
+* @returns {JSX} Component User Interface.
+*/
 const Chat = () => {
 	return (
 		<Wrapper>
