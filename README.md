@@ -7,6 +7,8 @@ Below is the stack I used in this project. Please follow the getting started sec
  - React Hooks
  - React Context API
  - React Router Dom
+ - Apollo Client
+ - Apollo Client Hooks
  - JSX
  - CSS Grid
  - Styled-Components
