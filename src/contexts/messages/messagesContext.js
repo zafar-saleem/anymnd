@@ -1,6 +1,5 @@
 import {
   createContext,
-  useEffect,
   useContext,
 } from 'react';
 import {
@@ -59,7 +58,7 @@ const MessagesProvider = ({ children }) => {
    * 
    * @type {function, object}
    */
-  const [postMessage, info] = useMutation(POST_MESSAGE);
+  const [, info] = useMutation(POST_MESSAGE);
   // set error, loading, data variables.
   error = info.error || error;
   loading = info.loading || loading;
