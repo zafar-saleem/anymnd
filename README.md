@@ -57,7 +57,7 @@ In terms of performance, as I mentioned I am using create-react-app to build the
 The development process that I followed for this project is `Gitflow` work flow. That means, I have two git branches `master` and `develop`. So I created a `feature branch` from `develop` branch. I develop the whole feature in that branch. Once I am done with it. I `merge` that branch with `develop` branch and push it to remote repo with `develop` branch. When I need to release new feature, I create a new branch `release` with a version number on it. Then I merge that `release` branch into master branch and push it to remote repo's `master` branch.
 
 ### Deployment Server
-I used netlify where I made continuous deployment to production. I set netlify CI/CD so that whenever, I push changes to `master` branch on gitlab it automatically gets deployed to netlify server. You can visit the production app here https://anymnd.netlify.app.
+I used netlify where I made continuous deployment to production. I set netlify CI/CD so that whenever, I push changes to `master` branch on github it automatically gets deployed to netlify server.
 
 ### Code Quality
 I wrote the entire project in components and pages architecture which means there will be separate pages and those pages will contain components. I wrote all the code very readable and easy follow. I also used `JSDocs` to document the entire code. In addition, I `eslint` is used in create-react-app to keep the quality of the code intact.
