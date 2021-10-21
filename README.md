@@ -61,14 +61,3 @@ I used netlify where I made continuous deployment to production. I set netlify C
 
 ### Code Quality
 I wrote the entire project in components and pages architecture which means there will be separate pages and those pages will contain components. I wrote all the code very readable and easy follow. I also used `JSDocs` to document the entire code. In addition, I `eslint` is used in create-react-app to keep the quality of the code intact.
-
-## Notes
-The design I was provided with was desktop friendly design only so I had no design for the mobile version of this project. Still I made this project `responsive` which means it works on both mobile phones and desktops.
-
-Since I had to make requests to GraphQl end points however, I had difficulty in receiving responses from the server and I was always getting errors from the server for both getting the data and posting the data. Since the deadline was strict for that I reason I added all the static information in the app and nothing is dynamic. I could not figure out what exactly is going wrong with server and why it is keep returning me an error while I am implementing everything perfectly right.
-
-I improved the design a bit, i.e. I removed the dropdown menu for user's list with this approach I reduced the number of clicks the user had to click.
-
-I did not have the resources such as images and icons for this project for that reason I made use of Font Awesome instead.
-
-If you have any question or having problem running this app then please let me know and I'll answer your questions help you out with running this project.
